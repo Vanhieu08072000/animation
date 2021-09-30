@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            motion:layout_editor_absoluteY="106dp"
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="89dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/imageView" />
+        <Constraint
+            android:layout_height="66dp"
+            motion:layout_editor_absoluteX="176dp"
+            android:layout_width="59dp"
+            android:id="@+id/imageView2"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="44dp" />
+        <Constraint
+            android:layout_height="61dp"
+            motion:layout_editor_absoluteX="177dp"
+            android:layout_width="58dp"
+            android:id="@+id/imageView3"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="48dp" />
+        <Constraint
+            android:layout_height="62dp"
+            motion:layout_editor_absoluteX="176dp"
+            android:layout_width="57dp"
+            android:id="@+id/imageView4"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="44dp" />
+        <Constraint
+            android:layout_height="51dp"
+            motion:layout_editor_absoluteX="181dp"
+            android:layout_width="49dp"
+            android:id="@+id/imageView5"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="52dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:layout_height="47dp"
+            motion:layout_editor_absoluteX="192dp"
+            android:layout_width="49dp"
+            android:id="@+id/imageView5"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="56dp"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        <Constraint
+            android:layout_height="53dp"
+            android:layout_width="69dp"
+            android:id="@+id/imageView4"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.514"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="168dp" />
+        <Constraint
+            motion:layout_editor_absoluteY="106dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/imageView"
+            motion:layout_constraintEnd_toEndOf="parent" />
+        <Constraint
+            android:layout_height="56dp"
+            android:layout_width="57dp"
+            android:id="@+id/imageView3"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:layout_marginTop="168dp"
+            motion:layout_constraintHorizontal_bias="0.912" />
+        <Constraint
+            android:layout_height="54dp"
+            android:layout_width="54dp"
+            motion:layout_constraintTop_toBottomOf="@+id/imageView"
+            android:id="@+id/imageView2"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="168dp"
+            android:layout_marginLeft="36dp"
+            android:layout_marginStart="36dp" />
+    </ConstraintSet>
+</MotionScene>
